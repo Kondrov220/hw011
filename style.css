@@ -1,0 +1,38 @@
+button {
+    color: gray;
+
+}
+
+.active {
+    border: 3px solid black;
+    color: black;
+    background-color: green;
+}
+
+@keyframes explode {
+    0% {
+      transform: translate(0, 0) scale(1) rotate(0deg);
+      background: linear-gradient(45deg, #ff00cc, #3333ff);
+      box-shadow: 0 0 10px #ff00cc;
+    }
+    25% {
+      transform: translate(50px, -50px) scale(1.5) rotate(90deg);
+      background: linear-gradient(45deg, #00ffcc, #ffcc00);
+      box-shadow: 0 0 30px #00ffcc;
+    }
+    50% {
+      transform: translate(100px, 0) scale(0.8) rotate(180deg);
+      background: linear-gradient(45deg, #00ccff, #cc00ff);
+      box-shadow: 0 0 40px #cc00ff;
+    }
+    75% {
+      transform: translate(50px, 50px) scale(1.3) rotate(270deg);
+      background: linear-gradient(45deg, #ff3366, #33ff99);
+      box-shadow: 0 0 50px #33ff99;
+    }
+    100% {
+      transform: translate(0, 0) scale(1) rotate(360deg);
+      background: linear-gradient(45deg, #ff00cc, #3333ff);
+      box-shadow: 0 0 20px #ff00cc;
+    }
+  }
